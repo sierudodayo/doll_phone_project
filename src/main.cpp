@@ -15,20 +15,20 @@
 // Memory Library
 #include <SPIFFS.h>
 
-// #define FORMAT_SPIFFS_IF_FAILED true
-// #define BLE_DEVICE_NAME "SmartPhoneForDolls"
-// #define SERVICE_UUID "b65ac29b-346b-4c47-a64c-c6785bb7800b"
-// #define CHARACTERISTIC_UUID "9b3f623b-9c48-4fca-840e-b43e6b4fc8e4"
-// #define LED_PIN 2
+#define FORMAT_SPIFFS_IF_FAILED true
+#define BLE_DEVICE_NAME "SmartPhoneForDolls"
+#define SERVICE_UUID "b65ac29b-346b-4c47-a64c-c6785bb7800b"
+#define CHARACTERISTIC_UUID "9b3f623b-9c48-4fca-840e-b43e6b4fc8e4"
+#define LED_PIN 2
 
 // BLE Static
-// BLEServer *pServer = NULL;
-// BLECharacteristic *pCharacteristic = NULL;
-// bool deviceConnected = false;
-// bool oldDeviceConnected = false;
-// std::string rxValue;
-// std::string txValue;
-// bool bleOn = false;
+BLEServer *pServer = NULL;
+BLECharacteristic *pCharacteristic = NULL;
+bool deviceConnected = false;
+bool oldDeviceConnected = false;
+std::string rxValue;
+std::string txValue;
+bool bleOn = false;
 
 // LovyanGFX define
 
