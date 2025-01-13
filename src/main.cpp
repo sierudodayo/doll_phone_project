@@ -8,12 +8,12 @@
 #define LGFX_AUTODETECT
 #include <LovyanGFX.hpp>
 
-// // BLE Library
-// #include <BLEDevice.h>
-// #include <BLEServer.h>
+// BLE Library
+#include <BLEDevice.h>
+#include <BLEServer.h>
 
-// // Memory Library
-// #include <SPIFFS.h>
+// Memory Library
+#include <SPIFFS.h>
 
 // #define FORMAT_SPIFFS_IF_FAILED true
 // #define BLE_DEVICE_NAME "SmartPhoneForDolls"
