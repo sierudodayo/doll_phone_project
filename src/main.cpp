@@ -36,6 +36,9 @@ bool bleOn = false;
 
 void setup()
 {
+  // Serial Port init
+  Serial.begin(19200);
+
   SPIFFS.begin(true);
   lcd.init();
   lcd.setRotation(3);
@@ -62,6 +65,8 @@ void loop() {
   pAdvertising->setMinPreferred(0x0);
   BLEDevice::startAdvertising();
 
+  Serial.println("Test Serial Message");
+
   lcd.fillScreen(TFT_WHITE);
   delay(1000);
   lcd.fillScreen(TFT_RED);
@@ -74,12 +79,8 @@ void loop() {
   delay(1000);
 }
 
-void createFile() {
-
-}
-
-// SPIFFS WRITE
+// SPIFFS init
 void writeImageFile(fs::FS &fs, const char *path)
 {
-
+  
 }
