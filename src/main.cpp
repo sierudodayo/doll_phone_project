@@ -37,15 +37,7 @@ bool bleOn = false;
 void setup()
 {
   // Serial Port init
-  Serial.begin(19200);
-
-  SPIFFS.begin(true);
-  lcd.init();
-  lcd.setRotation(3);
-  lcd.fillScreen(0xFFFFFFU);
-}
-
-void loop() {
+  Serial.begin(115200);
 
   pinMode(LED_PIN, OUTPUT);
   Serial.begin(115200);
@@ -65,7 +57,17 @@ void loop() {
   pAdvertising->setMinPreferred(0x0);
   BLEDevice::startAdvertising();
 
+  SPIFFS.begin(true);
+  lcd.init();
+  lcd.setRotation(3);
+  lcd.fillScreen(0xFFFFFFU);
+}
+
+void loop()
+{
   Serial.println("Test Serial Message");
+
+  if 
 
   lcd.fillScreen(TFT_WHITE);
   delay(1000);
@@ -82,5 +84,4 @@ void loop() {
 // SPIFFS init
 void writeImageFile(fs::FS &fs, const char *path)
 {
-  
 }
