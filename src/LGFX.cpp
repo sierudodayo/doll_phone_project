@@ -7,6 +7,7 @@
 #define TFT_DC   27
 #define TFT_CS   14
 #define TFT_RST  33
+#define TFT_BLK  26
 
 
 class LGFX : public lgfx::LGFX_Device

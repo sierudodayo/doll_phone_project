@@ -33,6 +33,7 @@ Contributors:
 #include "Touch.hpp"
 #include "panel/Panel_Device.hpp"
 #include "../boards.hpp"
+#include "SPIFFS.h"
 
 namespace lgfx
 {
